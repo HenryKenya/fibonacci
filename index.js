@@ -17,10 +17,10 @@ const fibonaci = (n) => {
     // here use the limit of the value n
     else {
        
-       let a = fibonaci(n-1)
+       let seriesArray = fibonaci(n-1)
        
-       seriesArray.push(a[a.length -1 ] + a[a.length -2])
-       
+       seriesArray.push(seriesArray[seriesArray.length -1 ] + seriesArray[seriesArray.length -2])
+    
        return seriesArray
         
     }
